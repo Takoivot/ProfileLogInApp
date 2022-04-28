@@ -16,8 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: Private Properties
     private let user = InfoUser.getInfoUser()
-    
-    
+        
     // MARK: Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +25,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         passwordTF.delegate = self
         
         passwordTF.enablesReturnKeyAutomatically = true
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -100,6 +98,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // MARK: Private Methods
 extension ViewController {
     private func showAlert(with title: String, and massage: String){
+        
         let alert = UIAlertController(title: title,
                                       message: massage,
                                       preferredStyle: .alert)
