@@ -9,21 +9,18 @@ import UIKit
 
 class UserInfoViewController: UIViewController {
 
+    var user: InfoUser!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = user.human.fullName
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let userPhotoVC = segue.destination as? PhotoUserViewController else {return}
+        userPhotoVC.user = user
     }
-    */
-
+    
 }
