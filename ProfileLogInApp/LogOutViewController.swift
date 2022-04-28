@@ -8,7 +8,6 @@
 import UIKit
 
 class LogOutViewController: UIViewController {
-
     
     @IBOutlet var welcomeUser: UILabel!
     
@@ -19,5 +18,4 @@ class LogOutViewController: UIViewController {
         super.viewDidLoad()
         welcomeUser.text = "Welcome, \(user.human.fullName)"
     }
-
 }
