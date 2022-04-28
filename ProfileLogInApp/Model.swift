@@ -21,6 +21,7 @@ struct Human {
     let name: String
     let surname: String
     let photo: String
+    let hobby: String
     
     var fullName: String {
         "\(name) \(surname)"
@@ -29,7 +30,9 @@ struct Human {
     static func getHuman() -> Human {
         Human(name: "Artur",
               surname: "Sakhbiev",
-              photo: "ArturS")
+              photo: "ArturS",
+              hobby: "I now Finland language a little , Moi, minun nimeni on Artur. Minä olen 25 vuotta vanha. Minä asun Venäjällä, Pietarissa.")
+    
     }
 }
 
