@@ -39,7 +39,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="logInButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="CnH-zX-zUm"/>
-                                    <segue destination="rov-4E-LeL" kind="presentation" modalPresentationStyle="fullScreen" id="Xe4-fd-J8j"/>
+                                    <segue destination="rov-4E-LeL" kind="presentation" identifier="go" modalPresentationStyle="fullScreen" id="Xe4-fd-J8j"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="JI8-lx-RYI">
