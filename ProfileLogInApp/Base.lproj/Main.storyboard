@@ -178,14 +178,26 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HN6-bT-Lv3">
                                 <rect key="frame" x="16" y="257" width="382" height="382"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kx3-U3-AV7">
+                                <rect key="frame" x="164.5" y="679" width="85" height="39.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Hobby">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="7Rf-ML-lRJ" kind="show" id="eli-dT-i1h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Uhd-1H-Jyv"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="HN6-bT-Lv3" firstAttribute="leading" secondItem="Uhd-1H-Jyv" secondAttribute="leading" constant="16" id="7S6-v5-tku"/>
                             <constraint firstItem="HN6-bT-Lv3" firstAttribute="top" secondItem="Uhd-1H-Jyv" secondAttribute="top" constant="169" id="F2F-G8-haB"/>
+                            <constraint firstItem="kx3-U3-AV7" firstAttribute="top" secondItem="HN6-bT-Lv3" secondAttribute="bottom" constant="40" id="LG7-rR-Ale"/>
                             <constraint firstItem="HN6-bT-Lv3" firstAttribute="height" secondItem="tje-6a-4VP" secondAttribute="height" multiplier="0.426339" id="clA-An-sa3"/>
                             <constraint firstItem="Uhd-1H-Jyv" firstAttribute="trailing" secondItem="HN6-bT-Lv3" secondAttribute="trailing" constant="16" id="gm2-dF-zAz"/>
+                            <constraint firstItem="kx3-U3-AV7" firstAttribute="centerX" secondItem="tje-6a-4VP" secondAttribute="centerX" id="ser-Qu-cRY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mtB-l1-ITx"/>
@@ -195,22 +207,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQH-gr-INw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2555" y="802"/>
+            <point key="canvasLocation" x="2553.6231884057975" y="801.5625"/>
         </scene>
-        <!--View Controller-->
+        <!--Hobby View Controller-->
         <scene sceneID="PZR-xk-kfb">
             <objects>
-                <viewController id="7Rf-ML-lRJ" sceneMemberID="viewController">
+                <viewController id="7Rf-ML-lRJ" customClass="HobbyViewController" customModule="ProfileLogInApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jeo-bJ-D8D">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0T-Ng-Seq">
+                                <rect key="frame" x="16" y="268" width="382" height="270"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="GoM-1Z-D0D"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="GoM-1Z-D0D" firstAttribute="trailing" secondItem="H0T-Ng-Seq" secondAttribute="trailing" constant="16" id="QX1-4P-VFb"/>
+                            <constraint firstItem="H0T-Ng-Seq" firstAttribute="top" secondItem="GoM-1Z-D0D" secondAttribute="top" constant="180" id="bE4-c3-7NK"/>
+                            <constraint firstItem="H0T-Ng-Seq" firstAttribute="leading" secondItem="GoM-1Z-D0D" secondAttribute="leading" constant="16" id="jGi-lg-4TU"/>
+                            <constraint firstItem="GoM-1Z-D0D" firstAttribute="bottom" secondItem="H0T-Ng-Seq" secondAttribute="bottom" constant="275" id="opB-2L-Fk1"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Nux-KL-pwQ"/>
+                    <connections>
+                        <outlet property="hobbyLable" destination="H0T-Ng-Seq" id="tM3-9V-Y6J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVr-ty-95i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3377" y="802"/>
+            <point key="canvasLocation" x="3376.811594202899" y="801.5625"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="y6L-fE-m20">
@@ -252,9 +282,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
