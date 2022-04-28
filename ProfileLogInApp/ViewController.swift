@@ -30,8 +30,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //guard let logOutVC = segue.destination as? LogOutViewController else {return}
-        //logOutVC.welcomeU = userNameTF.text ?? "Enter User Name"
         guard let tubBarVC = segue.destination as? UITabBarController else {return}
         guard let viewControllers = tubBarVC.viewControllers else {return}
         
@@ -46,8 +44,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-            view.endEditing(true)
             super.touchesBegan(touches, with: event)
+            view.endEditing(true)
     }
     
     // MARK: IBActions
@@ -88,7 +86,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         if textField == userNameTF {
-            passwordTF.becomeFirstResponder()
+            passwordTF.becomeFirstResponder()}
+        else {
+        logInButtonPressed()
+        performSegue(withIdentifier: "go", sender: nil)
             
         }
         return true
