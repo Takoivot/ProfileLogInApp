@@ -11,7 +11,9 @@ struct InfoUser {
     let human: Human
     
     static func getInfoUser() -> InfoUser {
-        InfoUser(userName: "Artur", userPassword: "qwerty", human: Human.getHuman())
+        InfoUser(userName: "Artur",
+                 userPassword: "qwerty",
+                 human: Human.getHuman())
     }
 }
 
@@ -25,7 +27,9 @@ struct Human {
     }
     
     static func getHuman() -> Human {
-        Human(name: "Artur", surname: "Sakhbiev", photo: "ArturS")
+        Human(name: "Artur",
+              surname: "Sakhbiev",
+              photo: "ArturS")
     }
 }
 
