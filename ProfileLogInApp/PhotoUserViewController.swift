@@ -8,7 +8,6 @@
 import UIKit
 
 class PhotoUserViewController: UIViewController {
-
     
     @IBOutlet var userPhoto: UIImageView!
     
@@ -18,6 +17,7 @@ class PhotoUserViewController: UIViewController {
         super.viewDidLoad()
         
         userPhoto.image = UIImage(named: user.human.photo)
+        userPhoto.layer.cornerRadius = 40
         
 
     }
