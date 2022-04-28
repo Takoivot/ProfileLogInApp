@@ -18,8 +18,11 @@ class PhotoUserViewController: UIViewController {
         
         userPhoto.image = UIImage(named: user.human.photo)
         userPhoto.layer.cornerRadius = 40
-        
-
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let hobbyVC = segue.destination as? HobbyViewController else {return}
+        hobbyVC.user = user
     }
     
 }
