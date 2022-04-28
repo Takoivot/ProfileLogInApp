@@ -15,12 +15,10 @@ class UserInfoViewController: UIViewController {
         super.viewDidLoad()
         
         title = user.human.fullName
-
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let userPhotoVC = segue.destination as? PhotoUserViewController else {return}
         userPhotoVC.user = user
     }
-    
 }
