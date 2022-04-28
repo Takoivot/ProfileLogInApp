@@ -13,6 +13,10 @@
 		F33B6335281AC5C600ECE659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33B6333281AC5C600ECE659 /* Main.storyboard */; };
 		F33B6337281AC5C700ECE659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33B6336281AC5C700ECE659 /* Assets.xcassets */; };
 		F33B633A281AC5C700ECE659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33B6338281AC5C700ECE659 /* LaunchScreen.storyboard */; };
+		F33B6342281AC7B200ECE659 /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B6341281AC7B200ECE659 /* LogOutViewController.swift */; };
+		F33B6344281AC7CD00ECE659 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B6343281AC7CD00ECE659 /* UserInfoViewController.swift */; };
+		F33B6346281AC7DD00ECE659 /* PhotoUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B6345281AC7DD00ECE659 /* PhotoUserViewController.swift */; };
+		F33B6348281AC7EB00ECE659 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B6347281AC7EB00ECE659 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		F33B6336281AC5C700ECE659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F33B6339281AC5C700ECE659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F33B633B281AC5C700ECE659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F33B6341281AC7B200ECE659 /* LogOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
+		F33B6343281AC7CD00ECE659 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		F33B6345281AC7DD00ECE659 /* PhotoUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUserViewController.swift; sourceTree = "<group>"; };
+		F33B6347281AC7EB00ECE659 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				F33B632F281AC5C600ECE659 /* SceneDelegate.swift */,
 				F33B6331281AC5C600ECE659 /* ViewController.swift */,
 				F33B6333281AC5C600ECE659 /* Main.storyboard */,
+				F33B6341281AC7B200ECE659 /* LogOutViewController.swift */,
+				F33B6343281AC7CD00ECE659 /* UserInfoViewController.swift */,
+				F33B6345281AC7DD00ECE659 /* PhotoUserViewController.swift */,
+				F33B6347281AC7EB00ECE659 /* Model.swift */,
 				F33B6336281AC5C700ECE659 /* Assets.xcassets */,
 				F33B6338281AC5C700ECE659 /* LaunchScreen.storyboard */,
 				F33B633B281AC5C700ECE659 /* Info.plist */,
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33B6348281AC7EB00ECE659 /* Model.swift in Sources */,
+				F33B6346281AC7DD00ECE659 /* PhotoUserViewController.swift in Sources */,
 				F33B6332281AC5C600ECE659 /* ViewController.swift in Sources */,
 				F33B632E281AC5C600ECE659 /* AppDelegate.swift in Sources */,
+				F33B6344281AC7CD00ECE659 /* UserInfoViewController.swift in Sources */,
+				F33B6342281AC7B200ECE659 /* LogOutViewController.swift in Sources */,
 				F33B6330281AC5C600ECE659 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
