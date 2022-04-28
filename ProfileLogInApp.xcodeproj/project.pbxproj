@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F31DF50F281AEDA500DB1685 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31DF50E281AEDA500DB1685 /* HobbyViewController.swift */; };
 		F33B632E281AC5C600ECE659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B632D281AC5C600ECE659 /* AppDelegate.swift */; };
 		F33B6330281AC5C600ECE659 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B632F281AC5C600ECE659 /* SceneDelegate.swift */; };
 		F33B6332281AC5C600ECE659 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33B6331281AC5C600ECE659 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F31DF50E281AEDA500DB1685 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
 		F33B632A281AC5C600ECE659 /* ProfileLogInApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfileLogInApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33B632D281AC5C600ECE659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F33B632F281AC5C600ECE659 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				F33B632F281AC5C600ECE659 /* SceneDelegate.swift */,
 				F33B6331281AC5C600ECE659 /* ViewController.swift */,
 				F33B6333281AC5C600ECE659 /* Main.storyboard */,
+				F31DF50E281AEDA500DB1685 /* HobbyViewController.swift */,
 				F33B6341281AC7B200ECE659 /* LogOutViewController.swift */,
 				F33B6343281AC7CD00ECE659 /* UserInfoViewController.swift */,
 				F33B6345281AC7DD00ECE659 /* PhotoUserViewController.swift */,
@@ -157,6 +160,7 @@
 				F33B6344281AC7CD00ECE659 /* UserInfoViewController.swift in Sources */,
 				F33B6342281AC7B200ECE659 /* LogOutViewController.swift in Sources */,
 				F33B6330281AC5C600ECE659 /* SceneDelegate.swift in Sources */,
+				F31DF50F281AEDA500DB1685 /* HobbyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
